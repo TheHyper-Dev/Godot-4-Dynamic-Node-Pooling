@@ -10,7 +10,7 @@ First have a global variable of a NodePool with the desired Node Type with Gener
 ```cs
 	public static NodePool<Box> box_pool;
 ```
-Then, initialize it somewhere with your own Node creation method that returns the created Node
+Then, initialize it somewhere with your own Node creation method that returns the created Node, the parent Node (World) and optionally the initial capacity for preallocation (speeds up the initialization)
 ```cs
 public override void _EnterTree()
 	{
