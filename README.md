@@ -32,7 +32,7 @@ public override void _UnhandledInput(InputEvent input)
 		}
 	}
 ``` 
-Finally, you should use the Remove() method to remove the object from the SceneTree and the active pool, it will be sent to the inactive pool for future reuse
+Finally, you should use the Remove(pooled_node) method to remove the object from the SceneTree and the active pool, it will be sent to the inactive pool for future reuse
 ```cs
 public partial class Box : StaticBody3D
 {
